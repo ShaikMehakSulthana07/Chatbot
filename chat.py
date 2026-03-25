@@ -4,7 +4,7 @@ import os
 
 st.title("CHATBOT")
 
-API_KEY = os.getenv("OPENREOUTER_API_KEY")
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 if "chat" not in st.session_state:
     st.session_state.chat = []
