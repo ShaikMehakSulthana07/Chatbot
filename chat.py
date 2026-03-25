@@ -1,9 +1,10 @@
 import streamlit as st
 import requests
+import os
 
 st.title("CHATBOT")
 
-API_KEY = "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"
+API_KEY = os.getenv("OPENREOUTER_API_KEY")
 
 if "chat" not in st.session_state:
     st.session_state.chat = []
